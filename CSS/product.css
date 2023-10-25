@@ -1,0 +1,74 @@
+.product-section .pro-collection {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Geologica", sans-serif;
+  justify-content: space-around;
+  margin: 0 60px;
+  padding: 20px;
+}
+.product-section h1,
+.product-section p {
+  text-align: center;
+}
+
+.product-section .product-cart {
+  width: 280px;
+  border: 1px solid #ebebeb;
+  padding: 13px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.2s;
+}
+.product-section .product-cart:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+.product-section .product-cart img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.product-cart img:hover{
+  transform: scale(1.06);
+  transition: 0.4s;
+}
+.product-section .product-cart span {
+  color: #969696;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 20px;
+}
+.product-section .product-cart h4 {
+  font-size: 18px;
+  color: rgb(41, 41, 41);
+}
+.product-section .product-cart .stars {
+  color: #e6ae2c;
+  padding: 6px 0;
+}
+.product-section .product-cart .price {
+  color: #088178;
+  padding: 4px 0;
+}
+.product-section .product-cart .buy-icon {
+  color: #088178;
+  background-color: #c7e9e75e;
+  padding: 15px;
+  border-radius: 50px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.add-to-cart button {
+  width: 60px;
+  background-color: #e6ae2c;
+  border: none;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.add-to-cart button:hover {
+  cursor: pointer;
+}

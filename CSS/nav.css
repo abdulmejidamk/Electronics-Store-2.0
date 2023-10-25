@@ -1,0 +1,54 @@
+/* Existing CSS styles */
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  font-family: "Geologica", sans-serif;
+}
+nav button {
+  background-color: rgb(80, 80, 78);
+  border: none;
+}
+nav button:hover {
+  background-color: rgb(255, 123, 0);
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #d3f5d4;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+/* Rest of your CSS styles */
+
+.contain {
+  display: flex;
+  flex-direction: column;
+}

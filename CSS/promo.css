@@ -1,0 +1,80 @@
+.promo {
+  margin-top: 100px;
+  display: flex;
+  font-family: "Geologica", sans-serif;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px;
+  /* height: 35vh; */
+}
+
+.promo-text {
+  width: 350px;
+  font-size: 2.5rem;
+  color: rgb(255, 196, 0);
+}
+
+.promo-images img {
+  width: 150px;
+  overflow: hidden;
+}
+
+.promo-images button {
+  background-color: transparent;
+  background-color: rgb(194, 100, 66);
+  border: 2px solid white;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/*  */
+
+.promo-images button:hover {
+  color: #6b3b1f;
+}
+
+.promo-images button:hover:before {
+  transform: scale(2);
+  opacity: 1;
+}
+
+.promo-images button i {
+  margin-left: 10px;
+}
+
+/* Optional: Add glow effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.promo-images button.glow:hover {
+  animation: glow 1.5s infinite;
+}
+
+body {
+  background: url(../Images/bggg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#eff {
+  color: red;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
