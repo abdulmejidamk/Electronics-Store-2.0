@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <link rel="stylesheet" href="../CSS/nav.css" />
+    <title>Login | Register</title>
+  </head>
+
+  <body>
+    <div class="contain">
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <button><a href="../HTML/index.html">Home</a></button>
+          </li>
+        </ul>
+      </nav>
+      <div class="card">
+        <!-- login alt -->
+        <div class="card-side login">
+          <h2>Login</h2>
+          <form>
+            <div class="input-group">
+              <label for="login-username">Username</label>
+              <input
+                type="text"
+                id="login-username"
+                name="login-username"
+                placeholder="Enter Username"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                name="login-password"
+                placeholder="Enter Password"
+                required
+              />
+            </div>
+            <button id="login-btn" type="submit">Login</button>
+          </form>
+          <p>
+            Don't have account?
+            <a href=""
+              ><span id="reg" style="color: rgba(10, 173, 238, 0.897)"
+                >Register Here!</span
+              ></a
+            >
+          </p>
+        </div>
+
+        <!-- register alt -->
+        <div class="card-side register hidden" id="to-show">
+          <h2>Register</h2>
+          <form>
+            <div class="input-group">
+              <div class="half-width">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="Enter First Name"
+                  required
+                />
+              </div>
+              <div class="half-width">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Enter Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password">Confirm Password</label>
+              <input
+                type="password"
+                id="password-confirm"
+                name="password"
+                placeholder="Enter Password"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="gender">Gender</label>
+              <span>Male</span
+              ><input type="radio" name="gender" value="Male" />
+              <span>Female</span
+              ><input type="radio" name="gender" value="Female" />
+              <!-- <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select> -->
+            </div>
+            <div class="input-group">
+              <label>
+                <input id="terms" type="checkbox" required />
+                I agree to the terms and conditions
+              </label>
+            </div>
+
+            <button id="register-btn" type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/register.js"></script>
+    <script src="../JS/validateForm.js"></script>
+  </body>
+</html>
