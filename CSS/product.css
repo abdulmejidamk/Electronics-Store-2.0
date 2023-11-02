@@ -12,7 +12,7 @@
 }
 
 .product-section .product-cart {
-  width: 280px;
+  width: 250px;
   border: 1px solid #ebebeb;
   padding: 13px;
   margin-bottom: 30px;
@@ -29,7 +29,7 @@
   border-radius: 25px;
 }
 
-.product-cart img:hover{
+.product-cart img:hover {
   transform: scale(1.06);
   transition: 0.4s;
 }
@@ -71,4 +71,11 @@
 
 .add-to-cart button:hover {
   cursor: pointer;
+}
+
+.product-cart-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
 }

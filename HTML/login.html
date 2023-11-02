@@ -31,7 +31,7 @@
         <!-- login alt -->
         <div class="card-side login">
           <h2>Login</h2>
-          <form>
+          <form action="../PHP/formProcess.php" method="post">
             <div class="input-group">
               <label for="login-username">Username</label>
               <input
@@ -67,7 +67,7 @@
         <!-- register alt -->
         <div class="card-side register hidden" id="to-show">
           <h2>Register</h2>
-          <form>
+          <form action="../PHP/loginForm.php">
             <div class="input-group">
               <div class="half-width">
                 <label for="first-name">First Name</label>
@@ -126,10 +126,6 @@
               ><input type="radio" name="gender" value="Male" />
               <span>Female</span
               ><input type="radio" name="gender" value="Female" />
-              <!-- <select id="gender" name="gender" required>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select> -->
             </div>
             <div class="input-group">
               <label>

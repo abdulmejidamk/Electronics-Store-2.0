@@ -57,7 +57,7 @@ function validateRegister(e) {
   } else {
     alert("Registered Successfully");
     // redirecting to shop page after successful registeration
-    window.location.replace("/HTML/shop.html");
+    window.location.replace("../HTML/shop.html");
   }
 
   e.preventDefault();

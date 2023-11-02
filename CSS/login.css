@@ -12,6 +12,8 @@ body {
 }
 
 .contain {
+  padding: 20px;
+  margin-top: 50px;
   /* margin: 250px; */
 }
 
